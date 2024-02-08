@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NalogCalculator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="reset.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-wrapper">
+        <div class="header-logo">
+          <img src="img/header/logo.png" alt="Логотип" class="header-logo">
+          <h1 class="header-title">Калькулятор транспортного налога</h1>
+        </div>
+        <div class="header-social">
+          <a href="#"><img src="img/header/icon-vk.svg" alt="иконка Вконтаке" class="header-icon"></a>
+          <a href="#"><img src="img/header/icon-tg.svg" alt="иконка Телеграм" class="header-icon"></a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="main-form">
+      <div class="container">
+        <form>
+          <div class="form-wrapper">
+            <div class="form-text">
+              <label for="" class="form-label">Регион:</label>
+              <select class="form-select region">
+                <option>01. Республика Адыгея</option>
+                <option>02. Республика Башкоркостан</option>
+                <option>03. Республика Бурятия</option>
+                <option>04. Республика Алтай (Горный Алтай)</option>
+                <option>05. Республика Дагестан</option>
+                <option>06. Республика Ингушетия</option>
+                <option>07. Кабардино-Балкарская Республика</option>
+                <option>08. Республика Калмыкия</option>
+                <option>09. Республика Карачаево-Черкессия</option>
+                <option>10. Республика Карелия</option>
+                <option>11. Республика Коми</option>
+                <option>12. Республика Марий Эл</option>
+                <option>13. Республика Мордовия</option>
+                <option>14. Республика Саха (Якутия)</option>
+                <option>15. Республика Северная Осетия — Алания</option>
+                <option>16. Республика Татарстан</option>
+                <option>17. Республика Тыва</option>
+                <option>18. Удмуртская Республика</option>
+                <option>19. Республика Хакасия</option>
+                <option>21. Чувашская Республика</option>
+                <option>22. Алтайский край</option>
+                <option>23. Краснодарский край</option>
+                <option>24. Красноярский край</option>
+                <option>25. Приморский край</option>
+                <option>26. Ставропольский край</option>
+                <option>27. Хабаровский край</option>
+                <option>28. Амурская область</option>
+                <option>29. Архангельская область</option>
+                <option>30. Астраханская область</option>
+                <option>31. Белгородская область</option>
+                <option>32. Брянская область</option>
+                <option>33. Владимирская область</option>
+                <option>34. Волгоградская область</option>
+                <option>35. Вологодская область</option>
+                <option>36. Воронежская область</option>
+                <option>37. Ивановская область</option>
+                <option>38. Иркутская область</option>
+                <option>39. Калининградская область</option>
+                <option>40. Калужская область</option>
+                <option>41. Камчатский край</option>
+                <option>42. Кемеровская область</option>
+                <option>43. Кировская область</option>
+                <option>44. Костромская область</option>
+                <option>45. Курганская область</option>
+                <option>46. Курская область</option>
+                <option>47. Ленинградская область</option>
+                <option>48. Липецкая область</option>
+                <option>49. Магаданская область</option>
+                <option>50. Московская область</option>
+                <option>51. Мурманская область</option>
+                <option>52. Нижегородская область</option>
+                <option>53. Новгородская область</option>
+                <option>54. Новосибирская область</option>
+                <option>55. Омская область</option>
+                <option>56. Оренбургская область</option>
+                <option>57. Орловская область</option>
+                <option>58. Пензенская область</option>
+                <option>59. Пермский край</option>
+                <option>60. Псковская область</option>
+                <option>61. Ростовская область</option>
+                <option>62. Рязанская область</option>
+                <option>63. Самарская область</option>
+                <option>64. Саратовская область</option>
+                <option>65. Сахалинская область</option>
+                <option>66. Свердловская область</option>
+                <option>67. Смоленская область</option>
+                <option>68. Тамбовская область</option>
+                <option>69. Тверская область</option>
+                <option>70. Томская область</option>
+                <option>71. Тульская область</option>
+                <option>72. Тюменская область</option>
+                <option>73. Ульяновская область</option>
+                <option>74. Челябинская область</option>
+                <option>75. Забайкальский край</option>
+                <option>76. Ярославская область</option>
+                <option>77. г. Москва</option>
+                <option>78. г. Санкт-Петербург</option>
+                <option>79. Еврейская автономная область</option>
+                <option>80. ДНР (Донецкая народная республика)</option>
+                <option>81. ЛНР (Луганская народная республика)</option>
+                <option>82. Республика Крым</option>
+                <option>83. Ненецкий автономный округ</option>
+                <option>84. Херсонская область</option>
+                <option>85. Запорожская область</option>
+                <option>86. Ханты-Мансийский автономный округ — Югра</option>
+                <option>87. Чукотский автономный округ</option>
+                <option>89. Ямало-Ненецкий автономный округ</option>
+                <option>92. г. Севастополь</option>
+                <option>95. Чеченская республика</option>
+              </select><br>
+              <label for="" class="form-label">Количество месяцев владения ТС:</label>
+              <input type="text" class="form-input months" placeholder="Введите от 1 до 12" value=""><br>
+              <label for="" class="form-label">Вид транспортного средства:</label> 
+              <select class="form-select type">
+                <option>Легковые автомобили</option>
+                <option>Автобусы</option>
+                <option>Грузовые автомобили</option>
+                <option>Мотоциклы и мотороллеры</option>
+                <option>Гидроциклы</option>
+                <option>Снегоходы и мотосани</option>
+                <option>Другие самоходные транспортные средства, машины и механизмы на пневматическом и гусеничном ходу</option>
+                <option>Катера, моторные лодки и другие водные транспортные средства</option>
+                <option>Яхты и другие парусно-моторные суда</option>
+                <option>Несамоходные (буксируемые) суда, для которых определяется валовая вместимость</option>
+                <option>Самолеты, вертолеты и иные воздушные суда, имеющие двигатели</option>
+                <option>Самолеты, имеющие реактивные двигатели</option>
+                <option>Другие водные и воздушные транспортные средства, не имеющие двигателей</option>
+              </select><br>
+              <label for="" class="form-label">Мощность двигателя:</label>
+              <input type="text" class="form-input power" placeholder="Введите мощность двигателя в л.с." value=""><br>
+              <p class="form-result">Нужно будет заплатить: </p>
+              <button class="form-btn">Рассчитать</button>
+            </div>
+            <div>
+              <img src="img/car.png" alt="БНВ" width="320px" height="320px">
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-info">
+        <ul class="footer-list">
+          <li class="footer-list-item"><a href="#" class="footer-list-link first">Что такое транспортный налог?</a></li>
+          <li class="footer-list-item"><a href="#" class="footer-list-link">Сведения необходимые для расчёта транспортного налога.</a></li>
+          <li class="footer-list-item"><a href="#" class="footer-list-link">Виды транспортных средств.</a></li>
+          <li class="footer-list-item"><a href="#" class="footer-list-link">Различия размера транспортного налога в регионах России.</a></li>
+          <li class="footer-list-item"><a href="#" class="footer-list-link">Различия размера транспортного налога в зависимоти от лошадиных сил.</a></li>
+        </ul>
+        <div class="footer-help"> 
+          <img src="img/help.png" alt="Юридическая помощь" class="footer-help-img">
+          <a class="footer-help-text" href="#">Юридическая помощь в чате.</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
